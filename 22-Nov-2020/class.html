@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Class</title>
+	<!-- dotclassname -->
+<style type="text/css">
+
+.apple{
+	background-color: yellow;
+	color: green;
+	font-size: 40px;
+}
+#Ananya{
+	background-color: green;
+	color:yellow;
+	font-size: 40px;
+}
+#Apples{
+	background-color: yellow;
+	color: purple;
+	font-size: 80px;
+}
+.sample1{
+	background-color: orange;
+	font-size: 10px;
+}
+.sample2{
+	background-color: green;
+	font-size: 10px;
+}
+</style>
+</head>
+<!-- dot for class # for id-->
+<body>
+ <h1 class="apple">Ayushi</h1>
+
+ <h2 id="Ananya">Akhyadha</h2>
+
+ <h3 id="Apples">Yash</h3>
+
+ <button onclick="myfunction()">Try IT</button>
+  
+  <div id="sample" class="sample1">
+  	This is coding Class
+  </div>
+<!--
+if id having sample 1 styles that means orange 
+then we are changing that into sample 2 styles means to green color
+
+if it is sample 2 that means green color then we are changing it into sample1 that means orange -->
+<script type="text/javascript">
+	// function myfunction() {
+	// 	// body...
+	// 	var getid=document.getElementById("sample");
+	// 	if(getid.className=="sample1"){
+	// 		getid.className="sample_yes";
+
+	// 	}
+	// 	else
+	// 	{
+	// 		getid.className="sample1";
+	// 	}
+	// }
+
+	// get the id using getElementById
+ //    using id get the class className
+ //    if it is sample 1----sample2
+ //    	sample2 ----sample1
+	 function myfunction(){
+	 	var id=document.getElementById("sample");
+	 	if(id.className=="sample1"){   
+	 		id.className="sample2";   
+	 	} 
+	 	else if(id.className=="sample2"){
+	 		id.className="sample1";
+	 	}
+	 }
+// link properties _blank self
+// id class
+// changing content using id
+// changing styles using id and class name 
+
+</script>
+</body>
+</html>
